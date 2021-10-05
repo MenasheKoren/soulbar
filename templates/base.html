@@ -1,10 +1,20 @@
-<header>
-  <a href="{% url 'home' %}">Home</a>
-  <a href="{% url 'about' %}">About</a>
-</header>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel='stylesheet' href='{% static "css/base.css" %}'>
+  <title>SoulBar</title>
+</head>
 
-{% block content %}
-  
-{% endblock content %}
-  
+<body class="page">
+  {% include 'header.html' %}
+  <main class='main'>
+  {% block content %} {% endblock content %}
+  </main>
+  {% include 'footer.html' %}
+</body>
+
+</html>
