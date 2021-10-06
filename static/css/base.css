@@ -2,10 +2,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   background-color: antiquewhite;
-  text-align: center;
+  
 }
 
-/* Alternate the background color of the output rows */
+/* Alternate the background color of the output rows
 .list-group-item:nth-child(even) {
   background-color: #bdf1ac;
 }
@@ -13,4 +13,4 @@
 .chat-log {
   max-height:200px;
   overflow-y:scroll;
-}
+} */
