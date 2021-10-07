@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
+{% load custom_tags %}
 {% block title %}Home{% endblock title %}
 
 {% block content %}
 <h1>Welcome to SoulBar</h1>
 {% if user.is_authenticated %}
-Hi {{ user.username }}! You are {{ user.age }} years old.
+Hi, {{ user.first_name}} {{ user.last_name }}! You are {{ user.age }} years old. {{ user.first_name|praise }}
 <p><a href="{% url 'logout' %}">Log Out</a></p>
 {% else %}
 <p>You are not logged in</p>
