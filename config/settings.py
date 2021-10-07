@@ -37,8 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pages',
+    # Third party
     'chatterbot.ext.django_chatterbot',
+    'crispy_forms',
+    
+    # My apps
+    'pages',
     'bottender',
     'accounts',
 ]
@@ -147,3 +151,5 @@ AUTH_USER_MODEL = 'accounts.CustomUser'
 
 LOGIN_REDIRECT_URL = 'home' 
 LOGOUT_REDIRECT_URL = 'home' 
+
+# CRISPY_TEMPLATE_PACK = 'bootstrap'
