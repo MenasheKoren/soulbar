@@ -43,12 +43,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Third party
-    'chatterbot.ext.django_chatterbot',
     'crispy_forms',
     
     # My apps
     'pages',
-    'bottender',
+    'chatbot',
     'accounts',
 ]
 
@@ -127,17 +126,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-# Chatterbot settings
 
-CHATTERBOT = {
-    'name': 'SoulBar Bottender',
-    'django_app_name': 'bottender',
-    'logic_adapters': [
-        'chatterbot.logic.MathematicalEvaluation',
-        'chatterbot.logic.TimeLogicAdapter',
-        'chatterbot.logic.BestMatch'
-    ]
-}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
