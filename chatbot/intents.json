@@ -1,0 +1,67 @@
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": [
+        "hello",
+        "hey",
+        "hi",
+        "good day",
+        "greetings",
+        "what's up?",
+        "how's it going?",
+        "how is it going?"
+      ],
+      "responses": [
+        "Hello!",
+        "Hey!",
+        "What can I do for you?",
+        "Howdy Partner!",
+        "How are you doing?",
+        "Greetings!",
+        "How do you do?"
+      ]
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "how old are you?",
+        "when is your birthday?",
+        "when was you born?"
+      ],
+      "responses": [
+        "You look so young.",
+        "I wish I could age as well as you do.",
+        "",
+        ""
+      ]
+    },
+    {
+      "tag": "date",
+      "patterns": [
+        "what are you doing this weekend?",
+        "do you want to hang out some time?",
+        "what are your plans for this week"
+      ],
+      "responses": [
+        "I am available all week",
+        "I don't have any plans",
+        "I am not busy"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": ["what's your name?", "what are you called?", "who are you?"],
+      "responses": ["My name is Sympathetic Sam", "I'm Sam", "Sam"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "g2g", "see ya", "adios", "cya"],
+      "responses": [
+        "It was nice speaking to you",
+        "See you later",
+        "Speak soon!"
+      ]
+    }
+  ]
+}
