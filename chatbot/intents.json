@@ -10,7 +10,8 @@
         "greetings",
         "what's up?",
         "how's it going?",
-        "how is it going?"
+        "how is it going?",
+        "howdy"
       ],
       "responses": [
         "Hello!",
@@ -27,13 +28,13 @@
       "patterns": [
         "how old are you?",
         "when is your birthday?",
-        "when was you born?"
+        "when were you born?"
       ],
       "responses": [
-        "You look so young.",
+        "I'm younger than I look.",
         "I wish I could age as well as you do.",
-        "",
-        ""
+        "I was born not that long ago.",
+        
       ]
     },
     {
@@ -60,7 +61,9 @@
       "responses": [
         "It was nice speaking to you",
         "See you later",
-        "Speak soon!"
+        "Speak soon!",
+        "Goodbye",
+        "Have a good one.",
       ]
     }
   ]

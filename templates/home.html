@@ -1,15 +1,13 @@
 {% extends 'base.html' %}
+{% load static %}
 {% load custom_tags %}
 {% block title %}Home{% endblock title %}
 
 {% block content %}
+{% include 'header.html' %}
 <h1>Welcome to SoulBar</h1>
-{% if user.is_authenticated %}
-Hi, {{ user.first_name}} {{ user.last_name }}! You are {{ user.age }} years old. {{ user.first_name|praise }}
-<p><a href="{% url 'logout' %}">Log Out</a></p>
-{% else %}
-<p>You are not logged in</p>
-<a href="{% url 'login' %}">Log In</a> |
-<a href="{% url 'signup' %}">Sign Up</a>
-{% endif %}
+<div class="container">
+  <div class="side-menu"></div>
+  <div class="chat-box"></div>
+</div>
 {% endblock content %}

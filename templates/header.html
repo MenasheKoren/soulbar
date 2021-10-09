@@ -1,7 +1,10 @@
+{% load static %}
 <header class="header">
+      <img src="{% static 'images/logo.png' %}" class="logo" alt="SoulBar logo">
     <nav class="navbar">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Beer_mug.svg" class="logo" alt="Beer logo">
       <a href="{% url 'home' %}" class='link'>Home</a>
-      <a href="{% url 'about' %}" class='link'>About</a>
+      <a href="{% url 'logout' %}">Logout</a>
+      <a href="{% url 'password_reset' %}">Reset password</a>
     </nav>
   </header>
+  

@@ -1,12 +1,16 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block title %}Log In{% endblock title %}
 {% load crispy_forms_tags %}
 {% block content %}
-<h2>Log In</h2>
+
+<img src="{% static 'images/logo.png' %}" class="logo" alt="SoulBar logo">
+<h2>Welcome back to SoulBar</h2>
+
 <form method="post">
   {% csrf_token %}
   {{ form|crispy }}
   <button type="submit">Log In</button>
 </form>
+  <a href="{% url 'signup' %}">Signup</a> | <a href="{% url 'password_change' %}">Reset password</a>
 {% endblock content %}

@@ -1,0 +1,26 @@
+.page {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  background-color: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.container {
+  flex-direction: row;
+  max-width: 100%;
+}
+.chat-box { 
+  background-image: url('/static/images/background-chat.png');
+  width: 917px;
+  height: 736px;
+  opacity: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  z-index: 1;
+}

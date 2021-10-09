@@ -1,7 +1,7 @@
 .page {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
-  background-color: antiquewhite;
+  background-color: #F3F3F3;
   display: flex;
   flex-direction: column;
   justify-content: center;
